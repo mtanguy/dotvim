@@ -1,0 +1,30 @@
+s project is a Vim configuration  dedicated.
+
+Installation:
+
+    git clone git://github.com/mtanguy/dotvim.git ~/.vim
+
+
+    Create symlink:
+
+ ln -s ~/.vim/vimrc ~/.vimrc
+
+
+   Install packages:
+
+ sudo aptitude install git exuberant-ctags ruby1.8-dev rake
+
+
+  Switch to the `~/.vim` directory, and fetch submodules:
+
+  cd ~/.vim
+  git submodule sync
+  git submodule init
+  git submodule update
+  git submodule foreach git submodule init
+  git submodule foreach git submodule update
+                                        
+                                    
+  Compile command-t:
+  cd ~/.vim/bundle/command-t
+  rake make
